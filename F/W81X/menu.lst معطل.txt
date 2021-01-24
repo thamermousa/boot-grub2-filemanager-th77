@@ -1,0 +1,413 @@
+﻿{ بِسْمِ اللهِ الرَّحْمنِ الرَّحِيمِ }
+
+
+# M.2
+
+اسم المستند هذا :
+menu.lst معطل.txt
+
+# 23.03.1442
+# 07.11.2020
+
+
+
+# ====================== البيانات الرئيسية , الشكل والخلفية والتوقيت والافتراضي وغيرها ====================
+
+# حجم الشاشة , ممكن الغائها
+# حجم الشاشة , ممكن الغائها
+# graphicsmode -1 640:800 400:580 24:32 || graphicsmode -1 -1 -1 24:32 الاصلي الطبيعي الخاص بي القديم
+# graphicsmode -1 640:800 480:600 24:32 || graphicsmode -1 -1 -1 24:32 لا اذكره
+# graphicsmode -1 640:800 520:800 24:32 || graphicsmode -1 -1 -1 24:32 هذه عملت دون تصغير الاحرف لم اجربها باعادة التشغيل وهي ممتازة بالويندوز
+# graphicsmode -1 650:850 600:900 24:32 || graphicsmode -1 -1 -1 24:32 هذا الحالي الممكن والافضل ويعمل جيدا
+
+graphicsmode -1 650:850 600:900 24:32 || graphicsmode -1 -1 -1 24:32
+
+
+# الالوان بقية الاكواد الثانوية
+
+# تغير الالوان كلها والخلفية سوداء
+# color normal=0x0c highlight=0x1e helptext=0x0D heading=0x0A standard=0x0b border=0x01
+
+
+# اللون اسود في المكان المخصص الذي تريده
+# بدون هذا يرجع الى كود آخر الى اللون الاحمر الطبيعي
+# color highlight=0x0022222200FFFF00
+
+
+# foreground=0033FF
+# background=FF3300
+
+# color standard=0x0000FF00FFFFFF
+# color border=0xEEFFEE
+
+
+# الالوان بالاحرف الصغيرة ( الكودات ) وبعضها لا يعمل مثل هذه الاسماء بالموقع
+# https://www.autohotkey.com/docs/commands/Progress.htm
+
+
+# البووت بالصورة , ممكن الغائها
+# gfxmenu /th77boot/images77/GFXmenu.gfx أو تحت
+# splashimage /th77boot/images77/1034-768.xpm أو تحت
+# splashimage /splashimag.gz || splashimage /splashimag.bmp أو تحت
+# الافضل لتغيير الصورة بسرعة من نوع bmp
+# splashimage /splashimage.bmp
+
+# \r هذه بدون هامش توضع اول العنوان , واذا وضعتها بعد العنوان لن يظهر شيء
+# \n هذه سطر جديد في المساعدة
+# \t هذه مسافة تقريبا بحجم تاب او عشر احرف
+# \a هذه تعطي علامة مثل النجمة وتزيل الترقيم
+
+# هذه تعمل لك تحديث اذا استخدمت المحاكي بكثرة عند تعديل ملف القائمة menu.lst
+# title Reload menu.lst
+# configfile (bd)/menu.lst
+
+# ====================== البيانات الرئيسية , الشكل والتوقيت والافتراضي وغيرها ====================
+
+# --------------- اخفاء القائمة ------------
+# اخفاء القائمة ويظهر فقط عد الثواني للدخول للافتراضي ويظهر بان تضغط على اي زر لروية القائمة
+# hiddenmenu
+
+# --------------- للخطوط معطلها وبحاجة لمعرفة اكثر ------------
+# http://rmprepusb.blogspot.co.uk/2013/11/changing-character-font-in-easy2boot.html
+# https://rmprepusb.blogspot.co.uk/2015/07/e2b-172betab-with-support-for-arabic.html
+# https://www.rmprepusb.com/tutorials/grub4dos?tmpl=%2Fsystem%2Fapp%2Ftemplates%2Fprint%2F&showPrintDialog=1
+
+# --ver-off
+# debug off
+# --ver-on
+# debug on
+# debug 0
+
+# --RTL
+# --right-align
+# --lang-ar
+# setmenu --right-align هذا يعمل بتغيير الاتجاه فقط من اليمين الى اليسار لكن تبقى القراءة بالعكس
+# setmenu --lang-ar
+
+# align-right
+# --align-right
+# setmenu align-right
+# setmenu --align-right
+# setmenu --ar
+# setmenu --lang-arabic
+
+# الخطوط مغلقة لانها لا تعمل جيدا
+# font /unifont-10.0.07.hex.gz
+# font /unicode.hex
+
+# بالنسبة للترقيم كل كود مفعل وغير معطل ايا كان يعتبر رقم
+
+# --------------- للخطوط معطلها وبحاجة لمعرفة اكثر ------------
+
+# --------------- جديد للواجهة ------------
+# انسى امرها
+# إزالة خط رأس الإصدار grub4dos وتحريك النص الافتراضي keyhelp النص خارج الشاشة (خط 61)
+# انسى  امرها لانها تزيل معلومات الاصدار
+# remove grub4dos version header line and move default keyhelp menu text off the screen (line 61)
+# setmenu --keyhelp=61=0xe && setmenu --ver-off
+
+# تعيين التحديد بمنطقة القائمة (حد سميك l = 4)
+set menu area (thick border l=4)
+
+# تعيين منطقة القائمة داخل مربع بحسب الحجم (حد سميك l = 4)
+# setmenu --box x=3 y=2 w=64 h=30 l=3
+
+# هذه تعمل قائمة المساعدة باليمين او اليسار بحسب المحاذاة
+# وهي باتجاه اليمين لان اللغة انجليزية
+# تغيير موضع النص قائمة المساعدة إلى جانب القائمة، س / ص = 69/20 عرض = 30 حرفا
+# change position of menu help text to side of menu, x/y = 69/20 width=30 characters
+# setmenu --help=69=30=30
+
+# تغيير حد القائمة إلى رقيق (استخدم صفر 0 لإيقاف تشغيل الحدود)
+# change menu border to thin (use 0 to turn off border)
+# setmenu --box l=3
+
+
+# ======================= تحت الجميع معطل =======================
+
+
+# ================================ الاكواد المهمة والرئيسية معطلة ===========================================
+
+# رئيسي الكل
+
+# 17
+# title boot AIO Load Grub2
+# kernel /AIO/grub/i386-pc/core.img
+
+# 20
+# title PhoenixOS
+# kernel /PhoenixOS/kernel quiet root=/dev/ram0 PhoenixOSboot.selinux=permissive buildvariant=userdebug SRC=/PhoenixOS
+# initrd /PhoenixOS/initrd.img
+
+
+# للدخول الى ابونتو اذا كان البووت ابونتو Grub2 ubuntu
+# title  \t ubuntu Grub2
+# kernel (hd0,0)/boot/grub/i386-pc/core.img
+
+
+# للدخول الى ابونتو اذا كان البووت grldr وهذا هو المهم لأنه بجوز يدخل بكثير من النسخ
+# title Switch to GRUB2 core.img for booting Linux (Ubuntu, Fedora etc)
+# set /a DefMenu=*0x8276&0xff > nul
+# set /a NTS=%DefMenu%/10 > nul
+# if not "%NTS%"=="0" set NTS=%DefMenu%
+# if "%NTS%"=="0" set NTS=0%DefMenu%
+# if "%PLOPDRV%"=="False" write --offset=0 (bd)/menucfg %NTS% > nul
+# clear
+# echo Please wait, searching for GRUB2 core img...
+# set IMGF=0
+# find --set-root --ignore-floppies --ignore-cd /boot/grub2/i386-pc/core.img > nul && set IMGF=1 && kernel /boot/grub2/i386-pc/core.img && boot
+# if "%IMGF%"=="0" find --set-root --ignore-floppies --ignore-cd /boot/grub/i386-pc/core.img > nul && set IMGF=1 && kernel /boot/grub/i386-pc/core.img && boot
+# if "%IMGF%"=="0" clear && echo GRUB2 core img not found! Returning to main menu... && pause --wait=5
+# configfile
+
+
+# عطلته السابق افضل والكود هذا ممتاز ايضا
+# ubuntu-14-04-desktop-i386 ابنتوا
+# ضع الاميج ISO في الروت , ويجب فك الاميج ISO في مجلد بنفس اسم الاميج حتى يعمل بشكل جيد لكن على الروت فقط
+# 55 : 09 م ‏06/‏04/‏2015 تاريخ عملها
+# حذف هذا الملف filesystem.squashfs من المجلد التالي
+# E:\ubuntu-14-04-desktop-i386\casper
+# وهذا لا تعمل فيه شيء ubuntu-14-04-desktop-i386.iso
+# اي يجب ان يكون حجم المجلد ubuntu-14-04-desktop-i386 و الاميج ubuntu-14-04-desktop-i386.iso ‏1 غيغابايت تقريبا
+# title Ubuntu-14.04-desktop-LTS-i386 iso and Hdd \n\n\t\tUbuntu-14.04-desktop-LTS-i386 iso in and hdd - 2015 ( 1 G.B )\n\n\t\t\tArabicMicrosoft@gmail.com
+# set ISO=/W81X/1iso/ubuntu-15.10-desktop-amd64.iso
+# set PERSIST=
+# set PERSIST=YES
+# map %ISO% (0xff)
+# map --hook
+# root (0xff)
+# set P=
+# if "%PERSIST%"=="YES" set P=persistent persistent-path=/mint
+# set PERSIST=
+# kernel /casper/vmlinuz file=/cdrom/preseed/cli.seed boot=casper %P% iso-scan/filename=%ISO% noeject   quiet splash --
+# initrd /casper/initrd.lz
+
+
+# هذه تعمل للأميج كله اي بدون حذف ملفاته والكود جديد مثل الابونتو
+# اوقفه لأنه الافضل السابق اذا ما كان في اليو اس بي لكي يحفظ التغيرات والملفات عليها
+# اوقفته وهذا الكود ممتاز للأميجات iso
+# title slax-Arabic-7.0.8-x86_64 from partition 0
+# map --unmap=0:0xff
+# map --unhook && map --rehook
+# cat --hex --locate=PoLPu@ (md)0x3D0+0x130 > nul && echo Cannot continue if PLoP is active, please start this entry without loading PLoP first && echo && pause Press any key to return to the main menu && configfile /menu.lst
+# set /a dev=*0x8280&0xff
+# root (%dev%,0)
+# set ISO=/W81X/images77/ISO/slax-Arabic-7_0_8-x86_64.iso
+# ls %ISO% > nul || find --set-root --devices=hf /usbdrive.tag|| echo Error! Could not find usbdrive.tag && echo  && pause Press any key to return to the main menu && configfile /menu.lst
+# ls %ISO% > nul || find --set-root --devices=hf %ISO% || echo Error! Could not find %ISO% && echo  && pause Press any key to return to the main menu && configfile /menu.lst
+# map %ISO% (0xff) || map --heads=0 --sectors-per-track=0 %ISO% (0xff) || echo FATAL ERROR mapping %ISO%, please check if file is present and defragmented && pause Press any key to return to main menu && configfile /menu.lst
+# كان مع الكود http://reboot.pro/topic/9916-grub4dos-isohybrided/page-2#entry88531
+# كان مع الكود http://www.rmprepusb.com/tutorials/tails
+# set /a dev=*0x82a0&0xff
+# debug 1
+# parttype (%dev%,3) | set check=
+# debug off
+# set check=%check:~-5,4%
+# if "%check%"=="0x00" partnew (%dev%,3) 0 0 0 && partnew (%dev%,3) 0x00 %ISO%
+# if not "%check%"=="0x00" echo WARNING: PARTITION TABLE 4 IN BIOS DEVICE %dev% IS ALREADY IN USE! && echo  && echo To prevent possible data loss will not continue further && pause && configfile /menu.lst
+# map --rehook
+# root (0xff)
+# chainloader (0xff)
+
+
+# ------------------ Other اخرى ------------------
+
+
+# EZBOOT
+# title boot from easy boot
+# chainloader --force (cd)/EZBOOT/LOADER.BIN
+
+# ---------------------- slax - Arabic ------------------
+
+# رئيسي
+# يجب ان يكون مجلد slax لوحده وليس داخل مجلد آخر ليعمل
+# يجب ان يكون اسم المجلد هكذا slax ولا تغيره والا لن يعمل اما اسم الاميج ممكن تغييره
+# في الاميج الاصلي وهو من الموقع slax-Arabic-7.0.8-x86_64.iso حذفت جميع الملفات داخل الامج وداخل سلاكس وابقيت على التالي
+# مجلد boot بكامل محتوياته يجب ان يبقى ولا تحذف شيء الا الملف التالي
+# isolinux.boot للحذف
+# المجلدات الاخرى فارغة وهي changes و modules و rootcopy
+# اصبح حجم الايمج iso ‏6.58 ميغابايت
+# و حجم مجلد slax ‏230 ميغابايت كما هو سوى حذف ملف السابق الذي ذكرته
+# ملاحظة اي شيء تعمله بهذه النسخة يحفظ في مجلد changes في ملف changes.dat وممكن حذفه اذا اردت ان تبقى النسخة خفيفة
+# هذه خاصة على USB و HDD
+# ممكن وضع برامج اخرى داخل المجلد modules مثل برنامج
+# 3105-kaffeine.sb أو 4000 -leafpad.sb أو 3078-libreoffice.sb
+# title slax-Arabic iso and Hdd \n\n\t\tslax-Arabic-7.0.8-x86_64 iso in and hdd - 2015 ( 267 M.B )\n\n\t\t\tArabicMicrosoft@gmail.com
+# ls /slax.iso || find --set-root /W81X/images77/slax.iso
+# map --heads=0 --sectors-per-track=0 /W81X/images77/slax.iso (0xff) || map --heads=0 --sectors-per-track=0 --mem /W81X/images77/slax.iso (0xff)
+# map --hook
+# chainloader (0xff)
+
+# ================ XP ====================
+
+# title Boot HDD Windows XP (NTLDR)\n\t\tBoot Windows XP (NTLDR) from Hard Drive\n\n\t\t\tArabicMicrosoft@gmail.com
+# find --set-root --ignore-floppies --ignore-cd /ntldr
+# map () (hd0)
+# map (hd0) ()
+# map --rehook
+# find --set-root --ignore-floppies --ignore-cd /ntldr
+# chainloader /ntldr
+# savedefault
+
+# title Windows 7 SP1 x86 start setup
+# map --unhook
+# map --unmap=0:0xff && map --rehook
+# if "%PLOPDRV%"=="False" savedefault 3
+# ls /shifthd.bat > nul || find --set-root --devices=hf /shifthd.bat
+# /shifthd.bat
+# if "%RDSK%"=="" pause Fatal error while swapping hard disk order, cannot continue! && configfile /menu.lst
+# root (hd%RDSK%,0)
+# chainloader /BOOTMGR
+
+# title Windows 7 SP1 continue setup
+# map --unhook
+# map --unmap=0:0xff && map --rehook
+# ls /shifthd.bat > nul || find --set-root --devices=hf /shifthd.bat
+# /shifthd.bat
+# if "%RDSK%"=="" pause Fatal error while swapping hard disk order, cannot continue! && configfile /menu.lst
+# pause --wait=1 Booting MBR on hd0 ...
+# chainloader (hd0)+1
+
+# معطل لانني لا استخدمه
+# title find and load NTLDR of Windows NT/2K/XP\n find and load NTLDR of Windows NT/2K/XP
+# fallback +1
+# find --set-root --ignore-floppies --ignore-cd /ntldr
+# map () (hd0)
+# map (hd0) ()
+# map --rehook
+# find --set-root --ignore-floppies --ignore-cd /ntldr
+# chainloader /ntldr
+# savedefault --wait=2
+
+# ===============Boot HDD1 to HDD0 to C=====================
+
+# معطل
+# رئيسي
+# هذه الخيار ينقلك من الهارد ديسك الى الهارد ديسك للبووت ويندوز
+# HDD1 من
+# HDD0 الى هذا
+# مثال من HDD1 E
+# الى HDD0 C
+# هذه لاجل الاقلاع من ويندوز VHD في السي اذا كنت مفرمت السي ووضعت هذا الملف فقط
+# مجرب ويعمل
+# title Boot HDD1 to HDD0 to C - Vista/8/7/2008/10 (BootMGR)\n\t\tBoot Windows Vista/8/7/2008 (BootMGR) from Hard Drive\n\n\t\t\tArabicMicrosoft@gmail.com
+# find --set-root --ignore-floppies --ignore-cd /bootmgr
+# map () (hd1)
+# map (hd1) ()
+# map --rehook
+# find --set-root --ignore-floppies --ignore-cd /bootmgr
+# chainloader /bootmgr
+# savedefault
+
+# معطل
+# رئيسي
+# هذه الخيار ينقلك من الهارد ديسك الى الهارد ديسك للبووت ويندوز
+# HDD1 من
+# HDD0 الى هذا
+# مثال من HDD1 E
+# الى HDD0 C
+# هذه لاجل الاقلاع من ويندوز VHD في السي اذا كنت مفرمت السي ووضعت هذا الملف فقط
+# مجرب ويعمل
+# title Boot HDD1 to HDD0 to C - Grub4dos bootmgr\n\t\tBoot From Hard Drive (Windows Vista/7/8.1/10 or Xp)\n\n\t\t\tArabicMicrosoft@gmail.com
+# find --set-root --ignore-floppies --ignore-cd /bootmgr || find --set-root --ignore-floppies --ignore-cd /ntldr || rootnoverify (hd0) && chainloader +1 && boot
+# map () (hd1) && map (hd1) () && map --rehook
+# find --set-root --devices=h /bootmgr || find --set-root --ignore-floppies --ignore-cd /ntldr
+# chainloader /bootmgr || chainloader /ntldr
+
+# معطل
+# رئيسي
+# هذه الخيار ينقلك من الهارد ديسك الى الهارد ديسك للبووت ويندوز
+# HDD1 من
+# HDD0 الى هذا
+# مثال من HDD1 E
+# الى HDD0 C
+# هذه لاجل الاقلاع من ويندوز VHD في السي اذا كنت مفرمت السي ووضعت هذا الملف فقط
+# مجرب ويعمل
+# title Boot HDD1 to HDD0 to C
+# find --set-root --ignore-floppies --ignore-cd /bootmgr
+# map () (hd0)
+# map (hd0) ()
+# map --rehook
+# find --set-root --ignore-floppies --ignore-cd /bootmgr
+# chainloader /bootmgr
+# savedefault
+
+# title Windows
+# rootnoverify (hd2,0)
+# chainloader +1
+
+
+# ======================== جديد 2019 ============================================
+
+# title Linux Mint 9 Rosinka S32b-20100614
+# kernel /Rosinka/vmlinuz iso-scan/filename=/Rosinka/LinuxMint.iso boot=casper ro ipv6.disable=1 quiet splash -- locale=ar_AR
+# initrd /Rosinka/initrd.lz
+
+# title LinuxMint Debian GNOME Full by Lazarus 32bit
+# kernel /casper/vmlinuz boot=live config live-media-path=/casper locales=ar_AR.UTF-8 quiet --
+# initrd /casper/initrd.lz
+
+# title ubuntu 11.04 OEM
+# find --set-root /ubuntu-15.10-desktop-amd64.iso
+# map /ubuntu-15.10-desktop-amd64.iso (0xff)
+# map --hook
+# root (0xff)
+# kernel /casper/vmlinuz file=/cdrom/preseed/kubuntu.seed boot=casper persistent iso-scan/filename=/ubuntu-15.10-desktop-amd64.iso splash
+# initrd /casper/initrd.lz
+
+# title gentoo
+# kernel /Gentoo/isolinux/gentoo root=/dev/ram0 init=/linuxrc  dokeymap looptype=squashfs loop=/Gentoo/image.squashfs cdroot slowusb
+# initrd /Gentoo/isolinux/gentoo.igz
+
+# title gparted-live-0.11.0-2
+# kernel /live/vmlinuz boot=live config   quiet
+# initrd /live/initrd.img
+
+# title Easy Peasy 1.6
+# find --set-root /iso/EasyPeasy.iso
+# map /iso/EasyPeasy.iso (0xff)
+# map --hook
+# root (0xff)
+# kernel /casper/vmlinuz iso-scan/filename=/iso/EasyPeasy.iso file=/cdrom/preseed/ubuntu-netbook.seed boot=casper quiet splash
+# initrd /casper/initrd.lz
+
+# title Symantec Ghost v11.0
+# find --set-root /boot/Ghost.IMA
+# map --mem /boot/Ghost.IMA (fd0)
+# map --hook
+# rootnoverify (fd0)
+# chainloader (fd0)+1
+
+# title HDD Regenerator v2011
+# find --set-root /boot/HDDReg.IMG
+# map --mem /boot/HDDReg.IMG (fd0)
+# map --hook
+# rootnoverify (fd0)
+# chainloader (fd0)+1
+
+# title LinmacOS LiveDVD Boot & Install on HDD
+# kernel /LinmacOS/casper/vmlinuz  boot=casper vga=788 live-media-path=/LinmacOS/casper/
+# initrd /LinmacOS/casper/initrd.gz
+
+# Runtu XFCE
+# title "Runtu XFCE(AR)" live
+# kernel /runtu/casper/vmlinuz boot=casper ignore_uuid live-media-path=/runtu/casper quiet splash -- debian-installer/language=AR keyboard-configuration/layoutcode?=AR
+# initrd /runtu/casper/initrd.lz
+
+# title "Runtu XFCE(AR)" Install
+# kernel /runtu/casper/vmlinuz boot=casper only-ubiquity ignore_uuid live-media-path=/runtu/casper quiet splash -- debian-installer/language=AR keyboard-configuration/layoutcode?=AR
+# initrd /runtu/casper/initrd.lz
+
+# title "Runtu XFCE(AR)" check
+# kernel /runtu/casper/vmlinuz boot=casper integrity-check ignore_uuid live-media-path=/runtu/casper quiet splash -- debian-installer/language=AR keyboard-configuration/layoutcode?=AR
+# initrd /runtu/casper/initrd.lz
+
+# title Boot Installer
+# fallback 1
+# find --set-root /ubuntu-15.10-desktop-amd64.iso
+# map /ubuntu-15.10-desktop-amd64.iso (0xff) || map --mem /ubuntu-15.10-desktop-amd64.iso (0xff)
+# map --hook
+# chainloader (0xff)
+# savedefault --wait=2
+
+# ======================== جديد 2020 ============================================

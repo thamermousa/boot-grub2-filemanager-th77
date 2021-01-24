@@ -1,0 +1,575 @@
+﻿#                   بسم الله الرحمن الرحيم
+
+# M.2
+
+# 01.05.1442
+# 07.12.2020
+
+# الرئيسي menu.lst
+
+# هذه الاساسيات فقط للملفات لاجل التبويب في اقلاع grub4dos
+# menu.lst
+# grldr
+# grldr.mbr
+# grubfm_multiarch.iso v7.3.3
+# https://github.com/a1ive/grub2-filemanager/releases
+
+# --------------- اساسي القائمة ---------------
+
+# الالوان
+# color magenta/white white/red light-green/green light-magenta/white
+# color blue/green yellow/red white/magenta white/magenta
+# color black/cyan red/yellow light-red/light-blue white/light-cyan
+color black/white white/red light-green/red blue/light-cyan الاصلي الطبيعي الخاص بي
+# color black/white white/red light-green/red light-magenta/blue الاصلي الطبيعي
+
+# ترقيم البيانات
+write 0x8274 0x2001
+
+# التوقيت الذاتي للدخول
+timeout 17
+
+# الخيار الطبيعي , لتغيير الرقم اذا اردت مكان آخر وكل مجموعة أوامر عبارة عن رقم
+default 9
+# --------------- اساسي القائمة ---------------
+
+# ====================================================================================================================================
+# فوق هذا السطر تبقيه في نسخ ولصق ومتغيرات من M.2 , HDD , SDD , SDDs , USB
+
+
+# ==================== 07.12.2020 ===========================
+# ========== الملاحضات الجديدة اكتبها هنا فقط ثم انقلها الى ملف النصي ============
+
+
+
+
+# ====================================================================================================================================
+
+# اساسي ورئيسي
+# هذا الملف للجهاز الكمبيوتر فقط
+# PC HDD HDDs SSDs
+
+# 1
+title \t\t\t( ~~~ عربي - الاكواد من تجميع ثامرموسى~~~ )
+root
+
+# 2
+title
+root
+
+# 3
+# اطفاء الجهاز
+title **Shutdown\n\t\tShutdown OOFOOF\n\n\t\t\texe.dll.txt@gmail.com
+savedefault --wait=2
+halt
+
+# 4
+# اعادة تشغيل الجهاز
+title *Reboot\n\t\tReboot OOFOON\n\n\t\t\texe.dll.txt@gmail.com
+savedefault --wait=2
+reboot
+
+# 5
+title \t\t\t( ~~~ PC HDDS KINGSTON SA400S37240G ATA 223.57 G.B Disk 0, Partition 1 عربي ~~~ )
+root
+
+# 6
+title
+root
+
+# 7
+title Reload menu.lst
+configfile (bd)/menu.lst
+
+# 8
+title Reload menu.lst find /menu.lst, /boot/grub/menu.lst, /grub/menu.lst
+	errorcheck off
+	configfile /boot/grub/menu.lst
+	configfile /grub/menu.lst
+	if "%@root%"=="(ud)" && calc *0x82A0=*0x82b9&0xff
+	if "%@root:~1,1%"=="f" && find --set-root --devices=f /menu.lst && configfile /menu.lst
+	find --set-root --ignore-floppies --ignore-cd /menu.lst && configfile /menu.lst
+	find --set-root --ignore-floppies --ignore-cd /boot/grub/menu.lst && configfile /boot/grub/menu.lst
+	find --set-root --ignore-floppies --ignore-cd /grub/menu.lst && configfile /grub/menu.lst
+	configfile http://b.chenall.net/menu.lst
+	errorcheck on
+	commandline
+
+# 9
+title
+root
+
+# 10
+title \r \a Go Menu Root 0 On Boot C: On Root Bootmgr Or Setup all Win 7 , 8.1.1 , 10 \nInstalling top bootmgr companies x64-bit Activator AutoKMS Arabic English Mar-3-2013 ( 7.5 G.B ) - ( 20 G.B ) \nNo Key Of: 32JNW-9KQ84-P47T8-D8GGY-CWCK7 ) exe.dll.txt@gmail.com
+find --set-root /bootmgr
+chainloader /bootmgr
+
+# 11
+title
+root
+
+# 12
+title W81X On BCD WIM,VHD,VHDX Mini Win 10,7 Arabic PE And Ubuntu 2020.04.1 wubi.exe wubild2 \n\n\t\t th77 W81X \n\n\t\t\tArabicMicrosoft@gmail.com
+find --set-root /W81X/bootmgr
+chainloader /W81X/bootmgr
+
+# 13
+# معطله لانه يوجد بديل له في ويبي وابقيه هنا اذا ما احتجته في وقت لاحق لانه اساسي , وهو الكود الوحيد لابنتو لتدخل اليه في قسم آخر
+# هذا لابنتو اذا اذا نزلت ابنتو على القرص وفي القسم الاول مثل ويندوز في هاردديسك آخر
+# title Ubuntu 2020.04.1 to GRUB2 core.img for booting Linux On HDD SDD SDDs M.2 (Ubuntu, Fedora etc)
+# set /a DefMenu=*0x8276&0xff > nul
+# set /a NTS=%DefMenu%/10 > nul
+# if not "%NTS%"=="0" set NTS=%DefMenu%
+# if "%NTS%"=="0" set NTS=0%DefMenu%
+# if "%PLOPDRV%"=="False" write --offset=0 (bd)/menucfg %NTS% > nul
+# clear
+# echo Please wait, searching for GRUB2 core img...
+# set IMGF=0
+# find --set-root --ignore-floppies --ignore-cd /boot/grub2/i386-pc/core.img > nul && set IMGF=1 && kernel /boot/grub2/i386-pc/core.img && boot
+# if "%IMGF%"=="0" find --set-root --ignore-floppies --ignore-cd /boot/grub/i386-pc/core.img > nul && set IMGF=1 && kernel /boot/grub/i386-pc/core.img && boot
+# if "%IMGF%"=="0" clear && echo GRUB2 core img not found! Returning to main menu... && pause --wait=5
+# configfile
+
+# 14
+title grubfm_multiarch.iso to Boot USB HDD SSD M.2 BIN VHD IMG WIM ISO all \n\n grubfm_multiarch.iso v7.3.3 to Boot USB HDD SSD M.2 BIN VHD IMG WIM ISO all ( 23.1 MB ) \n\n\t\t\t https://github.com/a1ive/grub2-filemanager/releases ArabicMicrosoft@gmail.com
+ls /W81X/grubfm_multiarch.iso || find --set-root /W81X/grubfm_multiarch.iso
+map --heads=0 --sectors-per-track=0 /W81X/grubfm_multiarch.iso (0xff) || map --heads=0 --sectors-per-track=0 --mem /W81X/grubfm_multiarch.iso (0xff)
+map --hook
+chainloader (0xff)
+
+# 15
+title
+root
+
+# 16
+title عربي\t\t\t by: thamermousa Boot HDD ON C: عربي\n\n\t\tBoot from Hard Disk ON C:\ \n\n\t\t\tWebsite URL : http://thamermousa.blogspot.com
+map (hd0) (hd1)
+map (hd1) (hd0)
+map --hook
+chainloader (hd0,0)+1
+
+# 17
+title grubfm.iso  to Boot USB HDD SSD M.2 BIN VHD IMG WIM ISO all \n\n Boot grubfm.iso to iso all ( grubfm.iso 7.12 MB ) \n\n\t\t\t https://github.com/a1ive/grub2-filemanager/releases ArabicMicrosoft@gmail.com
+map --mem  /W81X/grubfm.iso (0xff)
+map --hook
+chainloader (0xff)
+
+# 18
+title
+root
+
+# 19
+title 1_WinPE10_8_Sergei_Strelec_x86_x64_2020.06.09_English_sn_sbz.iso 1 \n\n Boot 1_WinPE10_8_Sergei_Strelec_x86_x64_2020.06.09_English_sn_sbz.iso ( 4.12 GB ) \n\n\t\t\tArabicMicrosoft@gmail.com
+ls /W81X/1iso/1_WinPE10_8_Sergei_Strelec_x86_x64_2020.06.09_English_sn_sbz.iso || find --set-root /W81X/1iso/1_WinPE10_8_Sergei_Strelec_x86_x64_2020.06.09_English_sn_sbz.iso
+map --heads=0 --sectors-per-track=0 /W81X/1iso/1_WinPE10_8_Sergei_Strelec_x86_x64_2020.06.09_English_sn_sbz.iso (0xff) || map --heads=0 --sectors-per-track=0 --mem /W81X/1iso/1_WinPE10_8_Sergei_Strelec_x86_x64_2020.06.09_English_sn_sbz.iso (0xff)
+map --hook
+chainloader (0xff)
+
+# 20
+title 1_WinPE10_8_Sergei_Strelec_x86_x64_2020.06.09_English_sn_sbz.iso 2 \n\n Boot 1_WinPE10_8_Sergei_Strelec_x86_x64_2020.06.09_English_sn_sbz.iso ( 4.12 GB ) \n\n\t\t\tArabicMicrosoft@gmail.com
+map --mem  /W81X/1iso/1_WinPE10_8_Sergei_Strelec_x86_x64_2020.06.09_English_sn_sbz.iso (0xff)
+map --hook
+chainloader (0xff)
+
+# 21
+title
+root
+
+# 22
+title 1_pmagic_2020_05_20.iso 1 \n\n Boot 1_pmagic_2020_05_20.iso 1 ( 797 MB ) \n\n\t\t\tArabicMicrosoft@gmail.com
+ls /W81X/1iso/1_pmagic_2020_05_20.iso || find --set-root /W81X/1iso/1_pmagic_2020_05_20.iso
+map --heads=0 --sectors-per-track=0 /W81X/1iso/1_pmagic_2020_05_20.iso (0xff) || map --heads=0 --sectors-per-track=0 --mem /W81X/1iso/1_pmagic_2020_05_20.iso (0xff)
+map --hook
+chainloader (0xff)
+
+# 23
+title
+root
+
+# 24
+# اساسي ورئيسي
+# ubuntu ابنتوا
+# لحفظ الامور وهو ممتاز وفيه هذه الملفات root.disk swap.disk
+# wubi.exe عن طريق برنامج
+# النسخة هذه جيدة ومستقرة وافضل من الاحدث منها
+title Ubuntu 2020.04.1 wubild2 wubi.exe From USB HDD ( 64 G.B ) \n Ubuntu Arabic ( 64 G.B ) From On Root.disk Swap.disk
+find --set-root /wubildr2
+chainloader /wubildr2.mbr
+
+# 25
+title
+root
+
+# ================================ للتجارب فقط ===========================================
+
+title ~~~~ test ~~~~
+root
+
+
+
+
+# ================================ للتجارب فقط =========================================== #
+
+title
+root
+
+title ~~~~ Boot Windows From CD DVD USB HDD ~~~~
+root
+
+title
+root
+
+# اساسي ورئيسي
+# 1 فقط البوت من الهارد
+title Boot HDD Vista/8/7/2008/10 (BootMGR)\n\t\tBoot Windows Vista/8/7/2008 (BootMGR) from Hard Drive\n\n\t\t\tArabicMicrosoft@gmail.com
+find --set-root --ignore-floppies --ignore-cd /bootmgr
+map () (hd0)
+map (hd0) ()
+map --rehook
+find --set-root --ignore-floppies --ignore-cd /bootmgr
+chainloader /bootmgr
+savedefault
+
+# رئيسي
+# للدخول الى كل الويندوز على نفس الهارد
+title Grub4dos bootmgr\n\t\tBoot From Hard Drive (Windows Vista/7/8.1/10 or Xp)\n\n\t\t\tArabicMicrosoft@gmail.com
+find --set-root --ignore-floppies --ignore-cd /bootmgr || find --set-root --ignore-floppies --ignore-cd /ntldr || rootnoverify (hd0) && chainloader +1 && boot
+map () (hd0) && map (hd0) () && map --rehook
+find --set-root --devices=h /bootmgr || find --set-root --ignore-floppies --ignore-cd /ntldr
+chainloader /bootmgr || chainloader /ntldr
+
+title
+root
+
+# للتحويل الى grldr.mbr نبحث عنه بعدين
+title Setup 
+find --set-root /grldr.mbr
+chainloader /grldr.mbr
+
+# هذا يدخل الى بوت القائمة
+title Boot MBR of First HDD\n\t\tBoot MBR of First Hard Disk\n\n\t\t\tArabicMicrosoft@gmail.com
+chainloader (hd0)+1
+rootnoverify (hd0)
+
+title Windows
+rootnoverify (hd2,0)
+chainloader +1
+
+title Boot from Hard Disk
+rootnoverify (hd0)
+chainloader +1
+
+title Boot Windows 7-8-8.1-10
+chainloader /BOOTMGR
+
+title
+root
+
+# ================================ Other اخرى ===========================================
+
+title ~~~~~~~~~~~~ Other ~~~~~~~~~~~~
+root
+
+
+# ================================ الاكواد المهمة والرئيسية ===========================================
+
+# ملاحظة - الجهاز يقرأ الويم Wim افضل من الايزو ISO لأنه يستخرج الملفات
+
+# ---------------------- Win XP ISO - Arabic ------------------
+
+# رئيسي
+# Mini_xp_AR_th77 الدخول على ويندوز اكس بي على السريع
+title Mini XP AR ISO \n\n Mini xp AR th77 ( 41 M.B ) \n\n\t\t\tArabicMicrosoft@gmail.com
+ls /W81X/1iso/Mini_xp_AR_th77.iso || find --set-root /W81X/1iso/Mini_xp_AR_th77.iso
+map --heads=0 --sectors-per-track=0 /W81X/1iso/Mini_xp_AR_th77.iso (0xff) || map --heads=0 --sectors-per-track=0 --mem /W81X/1iso/Mini_xp_AR_th77.iso (0xff)
+map --hook
+chainloader (0xff)
+
+# ---------------------- Boot Win ME th77 ISO ------------------
+
+# رئيسي
+# Boot Win ME th77 ISO dos-fdisk or format
+title Boot Win ME th77 ISO \n\n Boot Win ME th77 ( 35 M.B ) \n\n\t\t\tArabicMicrosoft@gmail.com
+ls /W81X/1iso/winmeboot.iso || find --set-root /W81X/1iso/winmeboot.iso
+map --heads=0 --sectors-per-track=0 /W81X/1iso/winmeboot.iso (0xff) || map --heads=0 --sectors-per-track=0 --mem /W81X/1iso/winmeboot.iso (0xff)
+map --hook
+chainloader (0xff)
+
+# ---------------------- Win 7 ISO - Arabic ------------------
+
+# ---------------------- Win 8.1 ISO - Arabic ------------------
+
+# ---------------------- Win 10 ISO - Arabic ------------------
+
+# رئيسي
+# Win10PESE_th77_x64 الدخول على ويندوز اكس بي على السريع
+title C - Win10PESE_th77_x64.ISO \n\n Win10PESE_th77_x64.ISO ( 41 M.B ) \n\n\t\t\tArabicMicrosoft@gmail.com
+ls /W81X/1iso/Win10PESE_th77_x64.iso || find --set-root /W81X/1iso/Win10PESE_th77_x64.iso
+map --heads=0 --sectors-per-track=0 /W81X/1iso/Win10PESE_th77_x64.iso (0xff) || map --heads=0 --sectors-per-track=0 --mem /W81X/1iso/Win10PESE_th77_x64.iso (0xff)
+map --hook
+chainloader (0xff)
+
+# ---------------------- جديد Install Windows 7 or 8.1 or 10 Arabic 64-bit Enterprise ------------------
+
+# جديد
+# فيه ملف AutoUnattend.xml
+# محتمل ينزل الويندوز من الاسطوانة وهذا افضل
+title Install Windows 7 64-bit Enterprise Edition\nRun the Windows install DVD to install a copy of Windows to your hard disk
+/Imdisk/wenv set iso=/iso/en_windows_7_enterprise_with_sp1_x64_dvd_620201.iso
+find --set-root/ImDisk/myiso.cmd
+dd if=()/ImDisk/au.xml of=()/AutoUnattend.xml
+dd if=()/ImDisk/cr.txt of=()/ImDisk/myiso.cmd
+/ImDisk/wenv call write ()/ImDIsk/myiso.cmd SET MYISO=${iso}\r\n
+/ImDisk/wenv call map ${iso} (0xff)
+map (hd0) (hd1)
+map (hd1) (hd0)
+map --hook
+chainloader (0xff)
+
+title
+root
+
+# ---------------------- ubuntu - Arabic ------------------
+
+
+# رئيسي
+# هذه يعمل للأميج كله اي بدون حذف ملفاته والكود جديد مثل الابونتو
+# اوقفه لأنه الافضل السابق اذا ما كان في اليو اس بي لكي يحفظ التغيرات والملفات عليها
+# هذا الكود ممتاز للأميجات ISO وهو الافضل
+title Ubuntu From ISO \n Ubuntu Arabic ( 1.5 G.B ) From ISO
+map --unmap=0:0xff
+map --unhook && map --rehook
+cat --hex --locate=PoLPu@ (md)0x3D0+0x130 > nul && echo Cannot continue if PLoP is active, please start this entry without loading PLoP first && echo && pause Press any key to return to the main menu && configfile /menu.lst
+set /a dev=*0x8280&0xff
+root (%dev%,0)
+set ISO=/W81X/1iso/ubuntu-15.10-desktop-amd64.iso
+ls %ISO% > nul || find --set-root --devices=hf /usbdrive.tag|| echo Error! Could not find usbdrive.tag && echo  && pause Press any key to return to the main menu && configfile /menu.lst
+ls %ISO% > nul || find --set-root --devices=hf %ISO% || echo Error! Could not find %ISO% && echo  && pause Press any key to return to the main menu && configfile /menu.lst
+map %ISO% (0xff) || map --heads=0 --sectors-per-track=0 %ISO% (0xff) || echo FATAL ERROR mapping %ISO%, please check if file is present and defragmented && pause Press any key to return to main menu && configfile /menu.lst
+#http://reboot.pro/topic/9916-grub4dos-isohybrided/page-2#entry88531
+#http://www.rmprepusb.com/tutorials/tails
+set /a dev=*0x82a0&0xff
+debug 1
+parttype (%dev%,3) | set check=
+debug off
+set check=%check:~-5,4%
+if "%check%"=="0x00" partnew (%dev%,3) 0 0 0 && partnew (%dev%,3) 0x00 %ISO%
+if not "%check%"=="0x00" echo WARNING: PARTITION TABLE 4 IN BIOS DEVICE %dev% IS ALREADY IN USE! && echo  && echo To prevent possible data loss will not continue further && pause && configfile /menu.lst
+map --rehook
+root (0xff)
+chainloader (0xff)
+
+title
+root
+
+# ============= مجموعة استرجاع البووت Grub2 في موقع supergrubdisk ===========
+# http://www.supergrubdisk.org/category/download/rescatuxdownloads/rescatux-stable/
+# http://www.supergrubdisk.org/category/download/supergrub2diskdownload/super-grub2-disk-stable/
+
+# رئيسي جديد 2020 خيارات متعددة منها البوت وحذف كلمة السر للويندوز ومن نفس موقع supergrub2
+# rescatux-0.73 مشاكل الاقلاع والدخول على الانظمة
+title rescatux-0.73\n\nrescatux-0.73 ( 11.9 M.B )\n\n\t\t\tArabicMicrosoft@gmail.com
+ls /W81X/1iso/rescatux-0.73.iso || find --set-root /W81X/1iso/rescatux-0.73.iso
+map --heads=0 --sectors-per-track=0 /W81X/1iso/rescatux-0.73.iso (0xff) || map --heads=0 --sectors-per-track=0 --mem /W81X/1iso/rescatux-0.73.iso (0xff)
+map --hook
+chainloader (0xff)
+
+# رئيسي جديد 2020
+# super_grub2_disk_hybrid_2.04s1 مشاكل الاقلاع والدخول على الانظمة
+title super_grub2_disk_hybrid_2.04s1\n\nsuper_grub2_disk_hybrid_2.04s1 ( 11.9 M.B )\n\n\t\t\tArabicMicrosoft@gmail.com
+ls /W81X/1iso/super_grub2_disk_hybrid_2.04s1.iso || find --set-root /W81X/1iso/super_grub2_disk_hybrid_2.04s1.iso
+map --heads=0 --sectors-per-track=0 /W81X/1iso/super_grub2_disk_hybrid_2.04s1.iso (0xff) || map --heads=0 --sectors-per-track=0 --mem /W81X/1iso/super_grub2_disk_hybrid_2.04s1.iso (0xff)
+map --hook
+chainloader (0xff)
+
+# رئيسي القديم
+# super_grub2_disk_hybrid_2.00s2 مشاكل الاقلاع والدخول على الانظمة
+title super_grub2_disk_hybrid_2.00s2\n\nsuper_grub2_disk_hybrid_2.00s2 ( 11.9 M.B )\n\n\t\t\tArabicMicrosoft@gmail.com
+ls /W81X/1iso/super_grub2_hybrid_2.iso || find --set-root /W81X/1iso/super_grub2_hybrid_2.iso
+map --heads=0 --sectors-per-track=0 /W81X/1iso/super_grub2_hybrid_2.iso (0xff) || map --heads=0 --sectors-per-track=0 --mem /W81X/1iso/super_grub2_hybrid_2.iso (0xff)
+map --hook
+chainloader (0xff)
+
+title
+root
+
+# ( ~~~~~~~ هذه لخيارات ntboot.iso لاجل الاقلاع من VHD or VHDX and WIM  ~~~~~~~ )
+
+# يمكنك أيضًا تحديد ملف .wim بدلاً من ملف vhd.
+title WIN VHD \n Windows 7/8/10 VHD or VHDX file ...  th77
+map --mem /ntboot.iso (0xff)
+map --hook
+(0xff)/NTBOOT NT6=()/W81X/WIN10_1.vhd
+boot
+
+# يمكنك أيضًا تحديد ملف .wim بدلاً من ملف vhd. xxxxxxxxxx
+title WIN PE10x64.wim \n wim
+map --mem /ntboot.iso (0xff)
+map --hook
+(0xff)/NTBOOT NT6=()/W81X/PE10x64.wim
+boot
+
+# يمكنك أيضًا تحديد ملف .wim بدلاً من ملف vhd. xxxxxxxx
+title WIN VHD \n iso
+map --mem /ntboot.iso (0xff)
+map --hook
+(0xff)/NTBOOT NT6=()/W81X/1iso/Mini_xp_AR_th77.iso
+boot
+
+
+title TEST XP VHD \nXP
+map --mem /ntboot.iso (0xff)
+map --hook
+(0xff)/NTBOOT NT5=()/WINXP.VHD
+boot
+
+# ( ~~~~~~~ هذه لخيارات ntboot.iso لاجل الاقلاع من VHD or VHDX and WIM  ~~~~~~~ )
+
+title
+root
+
+### ======================== تحويلات ============================
+
+title ~~~~~~~~ MENU lst القوائم قائمة MENU.lst ~~~~~~~~
+root
+
+
+# هذه قائمة Linux_Other.lst
+### MENU END
+title Go Menu Linux_Other ALL\n\tLinux_Other\n\n\t\t\texe.dll.txt@gmail.com
+configfile /W81X/images77/Linux_Other.lst
+### MENU END
+
+
+# هذه قائمة Linux_Ubuntu_0101.lst
+### MENU END
+title Go Menu Linux_Ubuntu_0101\n\tLinux_Ubuntu_0101\n\n\t\t\texe.dll.txt@gmail.com
+configfile /W81X/images77/Linux_Ubuntu_0101.lst
+### MENU END
+
+title ~~~~~~~~ grub2 القوائم قائمة grub.cfg والعكس ~~~~~~~~
+
+# تحويلة من GRUB4DOS الى grub2
+# syslinux.cfg
+# GRUB4DOS خاصة بالاقلاع للاسطوانات وغيرها وهي الاساسية لدي
+# grub2 خاصة بالاقلاع للينوكس
+
+# بقي كود تحويل من GRUB4DOS الى grub2
+# وهذا لم اجده الى الان الى في تحويله الى ملف مثل core.img مثل برنامج الو boot AIO
+
+### boot grldr GRUB4DOS all iso th77 هذه تحويلة من syslinux.cfg الى menu.lst
+# LABEL <==all iso th77==>
+# MENU <==all iso th77==>
+# BOOT /grldr
+# TEXT HELP
+#         boot grldr GRUB4DOS all iso >=---===> th77 <===---=<
+# ENDTEXT
+
+### boot grldr GRUB4DOS all iso th77 هذه تحويلة لـ menu.lst
+# لكن شكل هذا الكود افضل لانه يعمل على البحث عن grldr في grub2
+# ازل هذه العلامة للكود #
+#    menuentry 'Boot Grub4dos to menu.lst انتقل الى القائمة الاساسية القديمة [Enter]' {
+#    search --file /grldr --set=root
+#    insmod ntldr
+#    ntldr /grldr
+#    }
+
+# AIO بوت الو مع التعريب
+# wsmenu.lst و Grub4dos.lst للبوت lst لالو
+# title boot AIO Load Grub2
+# kernel /AIO/grub/i386-pc/core.img
+
+# title Syslinux\n Run Syslinux
+# chainloader /AIO/Tools/syslinux/syslinux/syslinux.bin
+
+# LABEL - Load
+# MENU LABEL 123123
+# CONFIG /grub/grub.cfg
+
+# LABEL - Load
+# MENU LABEL 123124
+# CONFIG /grub/localboot.cfg
+
+# # LABEL -
+# MENU LABEL UBCD FreeDOS R1.53 (Based on NwDsk V3.40)
+# TEXT HELP
+#  FreeDOS
+# ENDTEXT
+# COM32 linux.c32 memdisk
+# INITRD /ventoy.disk.img
+
+# LABEL Load Grub2
+# 	KERNEL /ventoy.disk.img
+
+### ====================================================
+
+# فقط لـ ابونتو Ubuntu
+# مثل ملف HDD_zip.lst لكن في ابونتو
+# هذا تضع فقط داخل قسم الابونتو Ubuntu في ملف
+# 40_custom
+# مثال للنسخة المجربة هي clonezilla-live-2.3.2-22-i686-pae.zip وايضا drbl-live-xfce-2.3.1-6-i686-pae.zip
+# الكود الصحيح ... محتمل تغير بعض الامور
+# menuentry "Clonezilla123" {
+# set root=(hd0,1)
+# linux /live-hd/live/vmlinuz boot=live live-config noswap nolocales edd=on nomodeset ocs_live_run=\"ocs-live-general\" ocs_live_extra_param=\"\" keyboard-layouts=\"\" ocs_live_batch=\"no\" locales
+# اعمل حذف لهذا السطر والذي يليه ليلتصق بالكلمة مع يساوي مباشرة دون فراغ , لانني عملت سطر جديد هذا لتصغير حجم عرض المستند
+# =\"\" vga=788 ip=frommedia nosplash live-media-path=/live-hd/live bootfrom=/dev/sda1 toram=filesystem.squashfs
+# initrd /live-hd/live/initrd.img }
+
+# 
+
+
+title
+root
+
+# title ~~~~ Setup And Installing ~~~~
+# root
+
+
+title ~~~~~~~~~~~ Other ~~~~~~~~~~~~~
+root
+
+
+# مساعدة
+title Help!\n\t\thelp\n\n\t\t\texe.dll.txt@gmail.com
+ls /W81X/images77/help.iso || find --set-root /W81X/images77/help.iso
+map --heads=0 --sectors-per-track=0 /W81X/images77/help.iso (0xff) || map --heads=0 --sectors-per-track=0 --mem /W81X/images77/help.iso (0xff)
+map --hook
+chainloader (0xff)
+
+
+# سطر الاوامر
+title Command Line\n\t\tCommand Line Cmd.exe\n\n\t\t\texe.dll.txt@gmail.com
+savedefault --wait=2
+commandline
+
+
+# اطفاء الجهاز
+title **Shutdown\n\t\tShutdown OOFOOF\n\n\t\t\texe.dll.txt@gmail.com
+savedefault --wait=2
+halt
+
+
+# اعادة تشغيل الجهاز
+title *Reboot\n\t\tReboot OOFOON\n\n\t\t\texe.dll.txt@gmail.com
+savedefault --wait=2
+reboot
+
+
+title
+root
+
+# العودة للقائمة االرئيسية menu.lst
+### MENU END
+title Go Back Home Main Menu
+configfile /menu.lst
+### MENU END
+
+title
+root
+
+
+
+# ================================ انتهى المستند ==================================
+
+

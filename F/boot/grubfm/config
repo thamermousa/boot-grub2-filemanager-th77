@@ -1,0 +1,76 @@
+# DO NOT CHANGE THIS FILE - IT WILL BE REPLACED WHENEVER YOU UPDATE agFM!
+
+clear
+
+set color_normal=yellow/black
+# if MBR boot - USB drive should always be hd0 - if boot from 'cd' then assume E2B drive exists and is hd0
+if [ "${bootdev}" = "hd127" ]; then set bootdev=hd0; fi
+if [ "${bootdev}" = "cd0" ]; then set bootdev=hd0; fi
+if [ "${grub_platform}" == "pc" ]; then set bootdev=hd0; fi
+echo -n " Easy2Boot agFM   (((   Translation into Arabic by thamermousa   ))) - (((   تعريب ثامرموسى   ))) "
+if [ -f (${bootdev},2)/agFM_version.txt ] ; then cat (${bootdev},2)/agFM_version.txt; fi
+if [ -f (${bootdev},3)/agFM_version.txt ] ; then cat (${bootdev},3)/agFM_version.txt; fi
+echo
+
+# DEFINE VARIABLES FOR MBR\EFI and 32/64-bit (note: Some systems may be UEFI32+CPU64 = UEFI32 BIOS but 64-bit CPU)
+set CPU64=false; set CPU32=false; set MBR=false; set EFI=false; set EFI64=false; set EFI32=false; set MBR32=false; set MBR64=false
+set CPU32=true
+if cpuid -l; then set CPU64=true; fi
+if [ "${grub_cpu}" == "x86_64" ]; then set CPU64=true; fi
+if $CPU64 == true ; then set CPU32=false ; fi
+if [ "${grub_platform}" == "pc" ]; then set MBR=true; fi
+if [ "${grub_platform}" == "efi" ]; then set EFI=true; fi
+if [ "${grub_cpu}" == "x86_64" and $EFI = true ]; then set EFI64=true; fi
+if [ "${grub_cpu}" == "i386" and $EFI = true ]; then set EFI32=true; fi
+if [ $CPU64 = true and $MBR = true ]; then set MBR64=true; fi
+if [ $CPU32 = true and $MBR = true ]; then set MBR32=true; fi
+export MBR EFI MBR32 MBR64 EFI32 EFI64 CPU32 CPU64
+
+if $MBR; then echo Legacy\\MBR\\CSM ; fi
+if $EFI64; then echo -n "UEFI64 - "; fi
+if $EFI32; then echo -n "UEFI32 - "; fi
+if $CPU32; then echo "32-bit CPU وحدة المعالجة الرئيسية لديك تأخذ نظام"; fi
+if $CPU64; then echo "64-bit CPU وحدة المعالجة الرئيسية لديك تأخذ نظام"; fi
+if [ "$grub_secureboot" = "Enabled" ]; then set color_normal=white/red; fi
+echo الأقلاع الآمن : $grub_secureboot 
+set color_normal=yellow/black
+echo محرك قرص التمهيد البووت : $bootdev
+echo الرام : ${RAM} م.ب
+# Check we have booted as drive 0 - most systems should but some UEFI systems don't boot as hd0!
+if  [ ! "${bootdev}" = "hd0" ]; then
+	echo "WARNING: Boot drive:${bootdev} (should be hd0)"
+	echo Please update BIOS or change boot settings!
+	echo
+	ls
+	echo
+	sleep 3
+fi
+# Check for extended partition
+if [ -d (${bootdev},5) ]; then echo WARNING: Logical partition(s) detected on ${bootdev}!;fi
+# ensure $bootdev is the agFM drive
+set hdd=0
+if [ -f (${bootdev},0)/boot/grubfm/config ] ; then set hdd=1; fi
+if [ -f (${bootdev},1)/boot/grubfm/config ] ; then set hdd=1; fi
+if [ -f (${bootdev},2)/boot/grubfm/config ] ; then set hdd=1; fi
+if [ -f (${bootdev},3)/boot/grubfm/config ] ; then set hdd=1; fi
+if [ -f (${bootdev},4)/boot/grubfm/config ] ; then set hdd=1; fi
+if [ -f (${bootdev},5)/boot/grubfm/config ] ; then set hdd=1; fi
+if [ -f (${bootdev},6)/boot/grubfm/config ] ; then set hdd=1; fi
+if [ -f (${bootdev},7)/boot/grubfm/config ] ; then set hdd=1; fi
+
+if ! [ "${hdd}" = "1" ] ; then echo ERROR: agFM file /boot/grubfm/config not found on ${bootdev},2 or ${bootdev},3; read; halt; fi
+unset hdd
+set color_normal=light-gray/black
+sleep 3
+clear
+
+fi
+
+unset blank
+unset file
+
+if [ -f (${user})/boot/grubfm/startup_menu.txt ] ; then 
+		configfile (${user})/boot/grubfm/startup_menu.txt
+		else 
+		configfile (${user})/boot/grubfm/startup_default.cfg
+fi

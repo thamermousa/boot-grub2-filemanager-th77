@@ -1,0 +1,208 @@
+﻿{ بِسْمِ اللهِ الرَّحْمنِ الرَّحِيمِ }
+
+
+
+
+للنسخ واللصق
+
+BCD 2020.09.11 wim vhd wubi
+
+\W81X\WIN10_1.vhd
+
+sources
+install
+boot
+
+E:\sources\install.wim
+E:\sources\boot.wim
+
+  53 : 03 امسينا بالله ‏10 / ‏08 / ‏1439 - ‏الخميس ‏شعبان
+===================================
+جديد
+\W81X\1PE10x64.wim
+WinPE_SE x64_x86_MultiWim_th77
+====================================
+
+ubuntu_1
+\ubuntu_1.vhd
+\ubuntu\winboot\wubildr.mbr
+
+
+WIN10_1.vhd 13G.B
+WIN7_1.vhd 13G.B
+WIN7_2.vhd 13G.B
+
+05:28 م ‏03/‏03/‏2017
+
+مهم :
+باقلاع ملفات الويندوز الاقلاعي wim
+من البيوس BIOS F2
+عطل هذا الخيار من قائمة
+Boot \
+UEFI Boot = Disable
+
+
+PE10x64.wim
+PE81x64.wim
+PE7x64.wim
+هذه جديدة لهذا التاريخ
+08:47 ص ‏16/‏02/‏2017
+
+
+اعادة تسمية جديد
+\W81X\WIN10_1.VHD NTLite Win10AR_Ent_ltsb9059481x64
+\W81X\WIN10_2.VHD بلا
+\W81X\WIN8_1.VHD بلا
+\W81X\WIN8_2.VHD بلا
+\W81X\WIN7_1.VHD ar_windows_7_ultimate_with_sp1_x64_dvd_u_677345
+\W81X\WIN7_2.VHD NTLite Win7AR_sp1UpU677345x64U
+
+--------------------------------------------------
+wim هذا التسجيل لـ UltraISO PE 9.5.2 Build 2836 في PE10x64.wim
+Home
+4BA9-0D54-214A-C938
+
+
+--------------------------------------------------
+ملاحظة مهمة عند التعامل مع تعديل ملف BCD :
+اذا حذفت ايا من الملفات هذه لن يظهر في قائمة البووت ,
+ايضا اي بيانات خاطئة ولم يقراها البووت على انها صحيحة لن تظهر في قائمة البووت ايضا
+
+هذه الملفات خاصة بالمجلد W81X فقط
+في المجلد W81X هذه الملفات التالية تابعة له
+E:\W81X
+BCD
+boot.sdi
+bootmgr
+etfsboot.com
+grldr
+grldr.mbr
+.wim
+.vhd
+
+--------------------------------------------------
+
+====================================================
+ممكن تشغيل البرامج التي في الويندوز او اي برامج بورتبل
+
+====================================================
+
+تم عملها ببرنامج winbuilder
+النسخة Win10SE_2016-05
+الملف Win10SE_Builder.exe
+
+Win10SE_th77 اللغة العربية
+
+اصل الويندوز لهذه النسخة ar_windows_10_enterprise_version_1511_updated_feb_2016_x64_dvd_8383316 والنواة عربية وليست معربة
+Windows 10 Enterprise, Version 1511 (Updated Feb 2016) (x64) - DVD (Arabic)
+Arabic Release Date: 4/3/2016
+
+
+محتمل المشاركة لا تعمل
+
+الانترنت يعمل
+
+
+الكتابة باللغة العربية والانجليزية تعمل
+
+
+================================================
+=
+====== ar_windows_10_enterprise_version_1511_updated_feb_2016_x64_dvd_8383316 ======
+
+
+Windows Product Key Information
+Product  Name:	Windows 10 Enterprise
+Product ID:	00329-00000-00003-AA515
+Installed Key:	NPPR9-FWDCX-D2C8J-H872K-2YT43
+ OEM Key:   	OEM key not present in firmware
+
+
+Windows 10 Enterprise, Version 1511 (Updated Feb 2016) (x64) - DVD (Arabic)
+Arabic Release Date: 4/3/2016
+
+Windows 10 Enterprise builds on Windows 10 Pro adding premium features designed to address the needs of large and mid-size organizations, such as advanced protection against modern security threats, full flexibility of OS deployment, updating and support options; as well as comprehensive device and app management and control capabilities.
+There are two downloads available for this Edition:
+Windows 10 Enterprise (Released Jul 2015)
+Windows 10 Enterprise, Version 1511 (Updated Feb 2016)
+Windows 10 Enterprise, Version 1511 (Updated Feb 2016) includes all updates released for Windows 10 Enterprise since Version 1511 (Released Nov 2015) including security and non-security updates. 
+File Name: ar_windows_10_enterprise_version_1511_updated_feb_2016_x64_dvd_8383316.iso
+Languages: Arabic
+SHA1: 4A15B562CAD9FA50B8C477F939CF7737E9D2C487
+
+Available to these Subscription Levels:
+VS Enterprise with MSDN (MPN)
+VS Enterprise with MSDN (NFR FTE)
+VS Enterprise with MSDN (Retail)
+VS Enterprise with MSDN (Retail)
+VS Enterprise with MSDN (VL)
+VS Enterprise with MSDN (VL)
+VS Enterprise with MSDN (VL)
+VS Enterprise with MSDN (VL)
+VS Enterprise with MSDN (VL)
+VS Pro with MSDN (Retail)
+VS Pro with MSDN (VL)
+VS Pro with MSDN (VL) MSD
+VS Test Pro with MSDN (Retail)
+VS Test Pro with MSDN (VL)
+VS Test Pro with MSDN (VL)
+VS Enterprise with MSDN (Retail)
+VS Enterprise with MSDN (VL)
+DreamSpark Premium
+MCT Developer Software & Services
+MCT Software & Services
+MSDN OS (Retail)
+MSDN OS (VL)
+MSDN Platforms
+MSDN Platforms
+Visual Studio Professional (MPN)
+VS Enterprise with MSDN (BizSpark Administrator)
+VS Enterprise with MSDN (BizSpark Member)
+VS Enterprise with MSDN (MPN)
+VS Enterprise with MSDN (MPN)
+VS Enterprise with MSDN (MPN)
+
+
+
+
+==================================================
+
+====== ar_windows_8.1.1_enterprise_with_update_x64_dvd_6050360 ================
+Product Name      : Windows 8.1 Enterprise
+Product ID        : 00261-30000-00000-AA825
+Product Key       : MHF9N-XY6XB-WVXMC-BTDCT-MKKG7
+Original Key:   	D6RD9-D4N8T-RT9QX-YW6YT-FCWWJ
+Original Edition:   	Win Next Starter Retail
+OEM Key:   	OEM key not present in firmware
+Installation Folder : C:\Windows
+Service Pack      : 
+Computer Name     : TH
+Modified Time     : 08/05/35 07:45:20 م
+
+==================================================
+
+
+======== Windows 7 Ultimate with Service Pack 1 (x64) - DVD (Arabic) ===================
+
+الايزو هذا لويندوز 7 لهذه النسخة
+
+Windows 7 Ultimate with Service Pack 1 (x64) - DVD (Arabic)
+
+This media refresh includes the installation hotfix described in KB Article 2534111. No other changes have been made to the product.
+File Name: ar_windows_7_ultimate_with_sp1_x64_dvd_u_677345.iso
+Languages: Arabic
+SHA1: 25565487ABEF877EBC6688C20A65E1C670B1F92D
+
+
+Product Name      : Windows 7 Ultimate
+Product ID        : 00426-OEM-8992662-00173
+Product Key       : 2Y4WT-DHTBF-Q6MMK-KYK6X-VKM6G
+Installation Folder : C:\Windows
+Service Pack      : Service Pack 1
+Computer Name     : th77
+Modified Time     : 2016-04-04 00:29:52
+
+==================================================
+
+
+th77

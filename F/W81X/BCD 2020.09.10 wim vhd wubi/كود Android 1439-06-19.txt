@@ -1,0 +1,687 @@
+﻿بسم الله الرحمن الرحيم
+
+
+
+كود Android 2017-01-13
+
+12:38 م ‏11/‏01/‏2017
+
+
+
+هذا الملف للبرنامج هذا DisableService 1.6.5_37
+DS_backup.txt
+ويوضع في البطاقة لأجل عمله في البرنامج
+وفيه ايقاف الخدمات الغير ضرورية التي تعمل بالخلفية او تبطىء الجهاز
+وتم ايقاف Google Play كله من خلاله وغيره من الامور
+م 02:20 - ‏05/‏12/‏2016
+
+
+اعدادات ES File Explorer
+ويوضع في البطاقة
+ESSettings.zip
+م 02:21 - ‏05/‏12/‏2016
+
+
+
+خط العرض والطول في اربد
+خط العرض
+32.55730347940479
+خط الطول
+35.84718704223633
+
+
+
+================= اسماء البرامج الممتازة للهاتف APK =================
+
+sa.edu.ksu.Ayat آية
+com.athanotify الأذان
+ES File Explorer
+LED Flashlight
+VLC
+WhatsApp
+Calculator
+Transparent weather
+ConvertPad
+Unit Converter
+Currency Converter
+Swapper v1.8_11
+Startup Manager
+DisableService
+Chrome
+Earth
+Gmail
+Hangouts
+Keep
+Translation
+Services Google Play
+Google Play
+Material Terminal 2.1.0_8
+Clocks around the world
+Hybrid Stopwatch and Timer
+كل الادوات في برنامج واحد v6.9.2_150132
+Android Assistant 23.17_107
+CM Lite 1.1.8_10180198
+DeskClock
+
+================= مواقع تننزيل APK ===============
+
+APK play.google تنزيل تحميل مباشرة من جوجل بلاي
+https://apps.evozi.com/apk-downloader/
+http://apk-dl.com/
+https://apkpure.com/
+http://m.downloadatoz.com/
+
+=========Android emulator=========
+============ ممتازة Excellent ===========
+
+بالترتيب لغاية هذا التاريخ
+02:49 ص ‏03/‏12/‏2016
+والافضل الثلاثة فقط
+
+
+
+AirDroid Desktop Client_3.3.5.0 لا يحاكي الهاتف وهو خفيف وعربي وليس ضروري تنزيله
+يعمل مع المتصفح وايضا برنامج في الجهاز الكمبيوتر وبرنامج في الهاتف
+http://web.airdroid.com/ الموقع وشاشة العرض
+وممكن نقل الملفات الصغيرة والصور بسهولة من الكمبيوتر الى الهاتف وبالعكس
+
+
+ابقى على اول ثلاثة فقط
+
+1- Nox Apps Android مجاني
+ممتاز لكنه ثقيل شوي وهو الافضل في تغيير اللغة للكتابة والنسخ واللصق والتعامل مع الملفات
+Excellent but a little heavy, which is better to change the language writing
+
+Nox Apps Android مجاني
+Version3.8.0.0 2017.01.11  آخر اصدارة وكل اسبوع يتغير
+nox_setup_v3.8.0.0_full_intl.exe آخر اصدارة
+nox_setup_v3.7.6.1_full_En.exe احتفظ بهذه النسخة اذا ما نزلت واحدة اخرى لانني بهذه جربتها جيدا وهي جيدة
+nox_setup_v3.7.5.1_full_En.exe احتفظ بهذه النسخة اذا ما نزلت واحدة اخرى لانني بهذه جربتها جيدا وهي جيدة
+http://en.yeshen.com/
+http://en.bignox.com/
+هذا الافضل وخاصة اذا ما عملت تخفيف له وتسريع وابطال الخدمات
+وايضا لأن ملف BackUP ملف واحد وممكن تعمل له عدة نسخ اذا ما دعت الحاجة بازالة برامج او اضافة
+
+
+2- برنامج KOPLAYER مجاني
+ممتاز لكنه ثقيل شوي وهو الافضل في تغيير اللغة للكتابة والنسخ واللصق والتعامل مع الملفات
+ممتازة مثل السابقات وسريع لكن مشكلته لا يوجد دعم جديد واغلق بهذه السنة 2017
+
+
+3- YouWave-Android مدفوع
+ممتاز خفيف نوعا ما وللنسخ واللصق وتغيير اللغة لكنه بحاجة للتسجيل او كراك
+
+YouWave-Android
+v3-20 هذه لدي وبحثت عن نسخ غيرها بكراك لم اجد
+ المحفوظات لدي من ملفاتها لأجل الهاتف منذ 2013 واحتفظ بها
+
+Premium 5.7 نسخة مدفوعة
+Free 3.31 هذه مجانية لم اجربها لكن فرق شاسع بين الحديثة
+https://youwave.com/
+
+
+
+4- LeapDroid اغلق
+ممتازة مثل السابقات وسريع لكن مشكلته لا يوجد دعم جديد واغلق بهذه السنة 2016
+
+LeapDroid v1.8.0.0
+http://www.leapdroid.com/ الموقع اغلق والدعم توقف عن البرنامج
+لكن البرنامج يفرق عن البقية انه يستهلك بالسي بي يو وليس الرامات عند تشغيل البرامج
+وعندما يكون غير مستعمل لا يستخدم موارد الرامات ولا السي بي يو مثل غيره
+مشكلته ايضا انه لا يعمل نسخ ولصق بالكيبورد لكن هو يعطيك اذا ما ضللت النص لتنسخه او تلصقه
+
+
+---------------------------
+
+
+5- MEmu مجاني
+جيد واخف البرامج لكن المشكلة عند تغيير اللغة
+نزلت هذه النسخة 2.9.1 وهي بهذا التاريخ 03/12/2016 والبرنامج لغة عربية
+لكن نفس المشكلة لا يكتب عربي على الكيبورد وعند تغيير اللغة يعلق او لا يعمل الا من خلال كيبورد الداخلي
+Excellent and lighter programs but the problem is when you change the language
+MEmu-Setup
+http://www.memuplay.com/
+
+6- Windroye مجاني
+جيد واخف البرامج لكن المشكلة عند تغيير اللغة
+Excellent and lighter programs but the problem is when you change the language
+Windroye
+http://www.windroye.com/index_eng.html
+
+============== جيد Acceptable ================
+
+6- BlueStacks2 مجاني
+لكن طريقته غير جيدة وهو محدود الخيارات لكنه سريع لتجربة بعض البرامج
+But in a way which is good but limited options to fast to experience some of the programs
+BlueStacks2
+http://www.bluestacks.com/ar/index.html?__dlrd=1
+
+
+7-
+ثقيل شوي
+Little heavy
+droid4x
+http://www.droid4x.com/
+
+=============== لا يعمل does not work ===============
+لا يعمل لدي بحاجة الى تمكين الجهاز الظاهري وليس موجود في البيوس
+
+8-
+does not work
+Andy
+http://www.andyroid.net/
+
+9-
+does not work
+DuOS
+http://amiduos.com/downloads
+
+============= Only the Chinese language ==============
+
+11-
+I did not take advantage of it
+xiaoji
+http://www.xiaoji001.com/
+
+
+
+============= انواع انظمة الاندرويد =================
+
+
+انواع انظمة الاندرويد
+https://ar.wikipedia.org/wiki/%D8%A3%D9%86%D8%AF%D8%B1%D9%88%D9%8A%D8%AF
+ Marshmallow (13.3%) حلوى الخطمي الى الان لم ينزل
+Lollipop (35.1%) المصاصة
+KitKat (30.1%) كيت كات
+Jelly Bean (17.8%)
+Ice Cream Sandwich (1.7%)
+Gingerbread (1.9%)
+Froyo (0.1%)
+
+
+
+=========== swap.disk and root.disk home.disk usr.disk ==============
+
+Automated resize مجربة وجيدة آلي اعادة الحجم لـ root.disk كله ويجب ان يكون لوحده غير مفصول للهوم واليوزر
+wubi-resize-1.7.tar.gz نزل هذا الملف وفك الضقط عنه بنفس الاسم
+
+https://help.ubuntu.com/community/ResizeandDuplicateWubiDisk موقع طريقتها
+
+https://help.ubuntu.com/community/ResizeandDuplicateWubiDisk?action=AttachFile&do=view&target=wubi-resize-1.7.tar.gz موقع الملف
+
+
+cd /home/th/التنزيلات/wubi-resize-1.7 يجب ان تدخل هنا بسطر الاوامر
+bash wubi-resize.sh --help مساعدة
+
+To create a new 15GB virtual disk: ويأخذ من الوقت من 10 الى 15 دقيقة بالكثير
+
+ملاحظة اذا وضعته 15 ج.ب والسواب 1 ج.ب فيعطيك مساحة root.disk
+14 ج.ب وليس كما تضعه بالامر
+اي اذا كان السواب 4 ج.ب فيعطيك المساحة 11 ج.ب لـ root.disk
+su bash wubi-resize.sh 16 غير الرقم وهو بالجيجابايت
+su bash wubi-resize.sh 16
+
+بسطر الاوامر هكذا العملية
+
+bash vagrant-swapfile.sh
+th@ubuntu:~$ cd cd /home/th/التنزيلات/wubi-resize-1.7
+th@ubuntu:wubi-resize-1.7/ﺕﻼﻳﺰﻨﺘﻟﺍ/~$ su bash wubi-resize.sh 11
+[su] password for th: 
+wubi-resize.sh:  A new virtual disk of 11 GB will be created. Continue? (Y/N)
+y
+wubi-resize.sh: Creating new virtual disk (new.disk)...
+wubi-resize.sh: Formatting new virtual disk as ext4.
+wubi-resize.sh: Copying files - this will take some time.
+wubi-resize.sh: Please be patient...
+wubi-resize.sh: Copying from root (/)
+wubi-resize.sh: Copying from /boot
+wubi-resize.sh: Copying from /usr
+wubi-resize.sh: Copying from /home
+wubi-resize.sh: Copying files completed
+wubi-resize.sh: Operation completed successfully. Please boot into
+wubi-resize.sh: Windows and rename the existing root.disk to
+wubi-resize.sh: OLDroot.disk and new.disk to root.disk. Keep the
+wubi-resize.sh: old disk until you confirm everything is working!
+th@ubuntu:wubi-resize-1.7/ﺕﻼﻳﺰﻨﺘﻟﺍ/~$ 
+
+هذه مجربة الى الان وهذه افضل من التي تحت
+
+-------------------------------
+
+اولا نزل هذا الملف wubi-add-virtual-disk
+
+How do I resize the virtual disks?
+
+Refer to the following guide: https://help.ubuntu.com/community/ResizeandDuplicateWubiDisk
+
+Note that LVPM only works to resize older releases of Ubuntu (those using grub-legacy).
+
+As an alternative, you can use the following script to move /home to a dedicated virtual disk.
+
+Download wubi-add-virtual-disk, open a terminal and run:
+
+1500 = MB غيرها كما تريد
+su sh wubi-add-virtual-disk /mnt/shared/LeapDroidShared/Other/swap 1024
+su sh wubi-add-virtual-disk /Download 2048
+adb shell
+cd sdcard
+cd Download
+
+Where the first argument is the directory to move to a new dedicated disk, and the second argument is the size in MB.
+
+You should now reboot. If you are happy with the result, you can now remove /home.backup. To undo the changes remove /home, copy rename /home.backup to /home and remove the /home line in /etc/fstab.
+
+Note that contrary to previous information, this script is not suitable for moving /usr.
+
+Experienced users may be able to do this manually, at own risk, following a process similar to that outlined in the file. (Do not rename /usr until the very last moment, as rsync is installed there.)
+
+To move /usr try enter recovery mode after you run
+
+7500 = MB غيرها كما تريد
+su sh wubi-add-virtual-disk /usr 7500
+and copy all folders in /usr.backup into new /usr and then fix su with
+
+chown root:root /usr/bin/su
+chmod 4755 /usr/bin/su
+
+
+How do I increase my swap space?
+
+The following will increase your swap to 3073153 GB = 3 GB. Replace count= with the number of kilobytes you want for your swap file. كما هي خطوة خطوة
+
+======================
+الى الان يعمل للموبايل نوكس
+1024 يأخذ وقت طويل
+الاحرف الصغيرة والكبيرة يتغير المعنى ... اي ضع اسم المسار بحسب حالة الاحرف للمجلدات
+su موبايل فقط
+sudo su
+swapoff -a بدون
+cd /mnt/shared/LeapDroidShared/Other/swap.img
+mv swap.disk swap.disk.bak
+dd if=/dev/zero of=swapfile.disk bs=896 count=896760
+هذا يعمل لـ لابيدري bs=896 يعني ميجابايت
+.swp
+.img
+
+mkswap swapfile.swp
+swapon -a بدون
+free -m بدون
+swapon swap.swp
+
+cd /storage/emulated/legacy/
+cd /storage/emulated/0/  legacy
+
+    cat /proc/meminfo هذا الامر للموبايل نوكس يظهر لك السواب والرام وغيرها
+    cat /proc/swaps هذا الامر للموبايل نوكس يظهر لك السواب ويقول لك لا يوجد
+
+chmod 600 swap.img
+
+/mnt/shared/LeapDroidShared/Other/swapper_swapfile
+swapon /mnt/shared/LeapDroidShared/Other/swapfile.swp
+mkswap /mnt/shared/LeapDroidShared/Other/swap.img
+swapon swap.img
+
+محتمل هذه
+/mnt/shared/LeapDroidShared/Other/swap.img swap swap defaults 0 0
+
+dd if=/dev/block/mmcblk0p3 of=/mnt/shared/LeapDroidShared/Other/efs.img bs=1096
+dd if=/dev/block/mmcblk0p3 of=/mnt/shared/LeapDroidShared/Other/extSdCard/efs.img bs=1096
+
+su موبايل فقط
+sudo su
+swapoff -a بدون
+cd /mnt/shared/LeapDroidShared/Other/swap.img
+mv swap.disk swap.disk.bak
+dd if=/dev/zero of=swapfile.swp bs=896 count=896760
+mkswap swapfile.swp
+swapon -a بدون
+free -m بدون
+swapon swap.swp
+=========================
+
+su swapon /mnt/shared/LeapDroidShared/Other/swap.disk
+su swapon /mnt/shared/LeapDroidShared/Other/swap.disk
+وكلما عطلته وشغلته يفرغ السواب والتأكد بهذا الامر swapon swap.disk
+
+cat /proc/swaps
+mkswap /mnt/shared/LeapDroidShared/Other/swap.disk
+
+
+mkswap /mnt/shared/mnt/LeapDroidShared/Other/swap.disk 11111111111
+su mkswap /mnt/shared/mnt/LeapDroidShared/Other/swap.disk 11111111111
+su mkswap /mnt/shared/LeapDroidShared/Other/swap.disk
+
+swapon /mnt/shared/LeapDroidShared/Other/swap.disk
+su swapon /mnt/shared/LeapDroidShared/Other/swap.disk
+
+swapon /mnt/shared/mnt/LeapDroidShared/Other/swap.disk
+su swapon /mnt/shared/mnt/LeapDroidShared/Other/swap.disk
+
+
+root@ubuntu:/host/ubuntu/disks# free -m نتيجة الامر
+             total       used       free     shared    buffers     cached
+Mem:          2997       2973         23         12       1058       1100
+-/+ buffers/cache:        815       2181
+Swap:         3001          0       3001
+
+
+root@ubuntu:/host/ubuntu/disks# swapon نتيجة الامر
+NAME                         TYPE SIZE USED PRIO
+/mnt/shared/LeapDroidShared/Other/swap.disk file   3G  84K   -1
+
+
+The final free statement will verify that your new swap file has the correct space. If everything worked, issue the following command and you are done. If it didn't work, then remove swap.disk and move swap.disk.bak back to swap.disk and try again.
+
+اذا لم يعمل معك هذا امر الاسترجاع
+rm swap.disk.bak
+
+
+adb shell
+
+--------- الطريقة فوق افضل للسواب ومجربة مثل هذه ---------
+
+http://unix.stackexchange.com/questions/23072/how-can-i-check-if-swap-is-active-from-the-command-line
+
+cat /proc/meminfo
+cat /proc/swaps
+swapon -s
+vmstat
+vm_stat 
+swap -l
+swap -s
+top 
+kswapd0
+sudo swapon --all --verbose
+
+
+لمعرفة هل يعمل السواب هكذا
+th@ubuntu:~$ swapon هذا الامر جيد
+th@ubuntu:~$ swapon -s او هذا
+th@ubuntu:~$ top مثل التاسك منجر في ويندوز
+لكن نزل بعض التحديثات او تفقد التحديثات او اعمل نسخ ولصق بملفات كبيرة ثم بسطر الاوامر اعمل الامر لتعرف انه استخدمه ام لا
+
+
+وهذه الاوامر تعطيك معلومات اخرى عن السواب
+free -m
+
+    cat /proc/meminfo هذا الامر للموبايل نوكس يظهر لك السواب والرام وغيرها
+to see total swap, and free swap (all linux)
+
+    cat /proc/swaps هذا الامر للموبايل نوكس يظهر لك السواب ويقول لك لا يوجد
+to see which swap devices are being used (all linux)
+
+    swapon -s
+to see swap devices and sizes (where swapon is installed)
+
+    vmstat
+for current virtual memory statistics
+
+df -h معلومات اخرى
+
+
+su swapoff -a أمر تعطيل مؤقت
+su swapon -a امر تمكين
+أو هكذا تعطيل مؤقت او تمكين 
+su swapoff /mnt/shared/LeapDroidShared/Other/swap.disk
+su swapon swap.disk
+وكلما عطلته وشغلته يفرغ السواب والتأكد بهذا الامر swapon -s
+
+cat /proc/swaps
+mkswap /swap.disk
+
+https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04
+
+su dd if=/dev/zero of=/mnt/shared/LeapDroidShared/Other/swap.disk bs=1024 count=4096k هذا الامر يعمل اذا لكن بحاجة لتنزيل النسخة من جديد
+
+su mkswap /mnt/shared/LeapDroidShared/Other/swap.disk
+su swapon /mnt/shared/LeapDroidShared/Other/swap.disk
+
+su chown root:root /mnt/shared/LeapDroidShared/Other/swap.disk
+su chmod 0600 /mnt/shared/LeapDroidShared/Other/swap.disk
+su chmod 0777 /mnt/shared/LeapDroidShared/Other/swap.disk
+
+
+
+https://help.ubuntu.com/community/ResizeWubiDisk هذا للديسك وليس للسواب انسى امره
+
+http://askubuntu.com/questions/464422/resize-ubuntu-partition-to-increase-its-size-without-reinstalling-ubuntu
+
+
+https://www.garron.me/en/bits/create-add-swap-file-ubuntu.html
+
+
+268.4 م.بايت (268435456 بايت)
+
+
+th@ubuntu:~$ su swapon -s
+[su] password for th: 
+Filename				Type		Size	Used	Priority
+/mnt/shared/LeapDroidShared/Other/swap.disk           	file    	262140	13068	-1
+th@ubuntu:~$ 
+
+https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-12-04
+
+
+جرب هذه
+
+
+الخطوات جديد
+02:05 م ‏30/‏11/‏2016
+
+swap.disk هذا ملف السواب عن طريق البرنامج Swapper v1.8_11 الذي يعلق الكتابة به
+
+/mnt/shared/LeapDroidShared/Other/swap.disk swap swap defaults 0 0
+
+sh swap.disk swap swap defaults 0 0 اعطيته هذا الامر كانه علق او يشغل السواب
+بعد هذا الامر عمل لوحده اعادة تشغيل للنظام اندرويد
+لم يعمل الاوامر
+
+sh تشغيل ملف اس اش وغيرها محتمل
+echo والكود
+
+touch swap.disk
+chmod 600 swap.disk
+ _
+
+ادخال الكود هذا في ملف fstab
+swap.disk       none  swap   defaults                                                                                             0      0
+بدل الدخول وتحرير الملف بالمدير هذه الاوامر تعملها اختر اي واحدة
+su echo "/mnt/shared/LeapDroidShared/Other/swap.disk    none    swap    sw    0    0" >> /fstab
+ls echo "/mnt/shared/LeapDroidShared/Other/swap.disk    none    swap    sw    0    0" >> /fstab
+ueventd echo "/mnt/shared/LeapDroidShared/Other/swap.disk    none    swap    sw    0    0" >> /fstab
+adbd echo "/mnt/shared/LeapDroidShared/Other/swap.disk    none    swap    sw    0    0" >> /fstab
+exit echo "/mnt/shared/LeapDroidShared/Other/swap.disk    none    swap    sw    0    0" >> /fstab
+
+
+dd if=/dev/block/mmcblk0p3 of=/mnt/shared/LeapDroidShared/Other/efs.img bs=1096
+dd if=/dev/block/mmcblk0p3 of=/mnt/shared/LeapDroidShared/Other/extSdCard/efs.img bs=1096
+
+su موبايل فقط
+sudo su
+swapoff -a بدون
+cd /mnt/shared/LeapDroidShared/Other/
+mv swap.disk swap.disk.bak لعمل احتياطي
+dd if=/dev/zero of=swap.disk bs=896 count=896000
+su dd if=/dev/zero of=/mnt/shared/LeapDroidShared/Other/swap.disk bs=512 count=4096k
+bs=896 هذه بـ م.ب
+mkswap swap.disk
+swapon swap.disk
+
+swapon -a بدون
+free -m بدون
+swapon swap.swp
+
+
+وهذه الاوامر تعطيك معلومات اخرى عن السواب
+free -m
+
+    cat /proc/meminfo هذا الامر للموبايل نوكس يظهر لك السواب والرام وغيرها
+to see total swap, and free swap (all linux)
+
+    cat /proc/swaps هذا الامر للموبايل نوكس يظهر لك السواب ويقول لك لا يوجد
+to see which swap devices are being used (all linux)
+
+
+df -h معلومات اخرى
+
+
+su swapoff -a أمر تعطيل مؤقت
+su swapon -a امر تمكين
+أو هكذا تعطيل مؤقت او تمكين 
+su swapoff /mnt/shared/LeapDroidShared/Other/swap.disk
+su swapon swap.disk
+وكلما عطلته وشغلته يفرغ السواب والتأكد بهذا الامر swapon -s
+
+cat /proc/swaps
+mkswap /swap.disk
+
+https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04
+
+su dd if=/dev/zero of=/mnt/shared/LeapDroidShared/Other/swap.disk bs=1024 count=4096k هذا الامر يعمل اذا لكن بحاجة لتنزيل النسخة من جديد
+
+su mkswap /mnt/shared/LeapDroidShared/Other/swap.disk
+su swapon /mnt/shared/LeapDroidShared/Other/swap.disk
+
+su chown root:root /mnt/shared/LeapDroidShared/Other/swap.disk
+su chmod 0600 /mnt/shared/LeapDroidShared/Other/swap.disk
+su chmod 0777 /mnt/shared/LeapDroidShared/Other/swap.disk
+
+==================================
+
+https://github.com/jackpal/Android-Terminal-Emulator/wiki/Android-Shell-Command-Reference
+
+
+sh تشغيل ملف اس اش وغيرها محتمل
+echo والكود
+
+اوامر كالمدير
+su 
+ls 
+ueventd 
+adbd echo
+exit
+
+ls مثل dir
+
+احد هذه الاوامر يعمل على اعادة المصنع او شيء اخر
+brcm_patchram_plus
+bugreport
+cat
+
+نسخ محتويات الملف إلى الإخراج القياسي.
+chmod
+
+تغيير وضع ملف (على سبيل المثال ما إذا كان يمكن للقراءة أو الكتابة).
+chown
+
+تغيير مالك الملف.
+cmp
+
+وفي Dalvik آلة افتراضية. (يستخدم لتشغيل تطبيقات أندرويد).
+date
+
+يطبع التاريخ والوقت الحالي
+dbus-daemon
+dd
+
+تحويل ونسخ الملف. وفق المعايير نسخ الافتراضي في لمن معيار.
+debuggerd
+dexopt
+df
+
+يبين مقدار المساحة الحرة على أنظمة الملفات المختلفة على جهازك.
+dhcpcd
+dmesg
+dnsmasq
+dumpstate
+dumpsys
+dvz
+fsck_msdos
+gdbserver
+getevent
+getprop
+gzip
+hciattach
+hd
+id
+ifconfig
+
+يبين الشكل الحالي من واجهات الشبكة (IP، MAC العنوان وما إلى ذلك)
+iftop
+
+يبين العمليات الحالية باستخدام واجهات شبكة الاتصال (أعلى، ولكن للشبكات)
+ime
+input
+insmod
+installd
+ioctl
+ionice
+iptables
+
+تسرد الملفات.
+lsmod
+lsof
+make_ext4fs
+mediaserver
+mkdir
+
+قائمة العمليات النشطة.
+qemu-props
+qemud
+racoon
+radiooptions
+reboot
+
+إعادة تشغيل الجهاز.
+record
+renice
+rild
+rm
+
+إزالة ملف.
+rmdir
+
+إزالة دليل.
+rmmod
+route
+rtp_test
+run-as
+schedtest
+schedtop
+sdcard
+sdptool
+sendevent
+service
+servicemanager
+setconsole
+setprop
+setup_fs
+sh
+showlease
+sleep
+smd
+stagefright
+start
+
+
+يبدأ وقت التشغيل أندرويد.
+stop
+
+توقف وقت التشغيل أندرويد.
+surfaceflinger
+svc
+sync
+system_server
+tc
+testid3
+toolbox
+top
+
+العروض التي عمليات تستخدم حاليا في معظم الوقت وحدة المعالجة المركزية.
+umount
+uptime
+
+BUSYBOX
+BUSYBOX هو البرنامج الذي يحتوي على قذيفة ومجموعة من المرافق سطر الأوامر. بحث سوق الروبوت ل "BUSYBOX" وعليك أن تجد بعض الإصدارات يمكنك تثبيت. يتضمن BUSYBOX قذيفة الانتهاء التبويب والتحرير التاريخ. بعض إصدارات BUSYBOX لالروبوت لا تتطلب منك قضاء هاتفك.
+
+

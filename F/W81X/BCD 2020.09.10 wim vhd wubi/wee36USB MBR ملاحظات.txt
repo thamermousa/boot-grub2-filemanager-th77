@@ -1,0 +1,146 @@
+﻿{ بِسْمِ اللهِ الرَّحْمنِ الرَّحِيمِ }
+
+
+10:57 م ‏04/‏07/‏1439
+
+
+ملاحظات
+wee36 MBR Sectors BackUp.bin
+واسمه wee36.bin
+وله ايضا رجوع بالبووت
+
+=========== u s b =========
+==== تم نقل ايمج الويندوز اكس بي وهذا خاص باليو اس بي ========
+=========== u s b =========
+
+#                   بسم الله الرحمن الرحيم
+find --set-root /boot/grub/grldr /boot/grub/grldr
+timeout 17
+default 0
+
+title 1. Win
+find --set-root --active command +1
+find --set-root /bootmgr /bootmgr
+find --set-root /ntldr /ntldr
+
+title 2. Grub4dos
+find --set-root /boot/grub/grldr /boot/grub/grldr
+find --set-root /boot/grub.exe /boot/grub.exe
+find --set-root /boot/grldr /boot/grldr
+find --set-root /grub.exe /grub.exe
+find --set-root /grldr /grldr
+
+title 3. MBR wee36.bin BackUp
+find --set-root /wee36.bin
+
+title 4. W81X\BCD
+find --set-root --active command +1
+find --set-root /W81X/bootmgr
+find --set-root /ntldr /ntldr
+
+title 5. Mini XP
+ls /W81X/Mini_xp.iso || find --set-root /W81X/Mini_xp.iso
+map --heads=0 --sectors-per-track=0 /W81X/Mini_xp.iso (0xff) || map --heads=0 --sectors-per-track=0 --mem /W81X/Mini_xp.iso (0xff)
+map --hook
+chainloader (0xff)
+
+title 6. ntboot.iso VHD
+map --mem /ntboot.iso (0xff)
+map --hook
+(0xff)/NTBOOT NT6=()/W81X/WIN7_1.vhd
+boot
+
+# th77
+
+============================ بيانات ===============================
+
+wee36
+هو مثل الجروب فور دوس Grub4dos
+تعمله لأجل التبويب باحدى التبويبات الرئيسية وهو هكذا
+
+يتسع تقريبا لالف حرف تقريبا لـ wee36 وتقريبا ضعف الكلمات الاصلية وكما في الاكواد تحت
+تعرف عددهم عند عمل الأم بي آر MBR لـ wee36 فستظهر لك مكان لكتابة الاكواد وتعرف ان نقص بعض الاكواد
+
+ولا تضع الوان او اي شيء كان
+
+اعمل حفظ له فيه خيار باك اب
+MBR wee36 Sectors BackUp.bin
+
+
+( ~~~~~~~ هذا أم بي آر جديد لا اعرفه كثيرا وهو اول خيار ببرنامج BOOTICEx64 MBR الخيار الاول ايضا بجانب خيار تحديث~~~~~~~ )
+( ~~~~~~~ MBR wee36.mbr ~~~~~~~ )
+
+#                   بسم الله الرحمن الرحيم
+find --set-root /boot/grub/grldr /boot/grub/grldr
+timeout 17
+default 0
+
+title 1. Windows
+find --set-root --active command +1
+find --set-root /bootmgr /bootmgr
+find --set-root /ntldr /ntldr
+
+title 2. Grub4dos
+find --set-root /boot/grub/grldr /boot/grub/grldr
+find --set-root /boot/grub.exe /boot/grub.exe
+find --set-root /boot/grldr /boot/grldr
+find --set-root /grub.exe /grub.exe
+find --set-root /grldr /grldr
+
+title 3. Plop plpbt.bin
+find --set-root /boot/grub/plpbt.bin /boot/grub/plpbt.bin
+
+title 4. Vboot
+find --set-root /vbootldr /vbootldr
+
+title 5. Burg
+find --set-root /buldr /buldr
+
+title 6. W81X\BCD
+find --set-root --active command +1
+find --set-root /W81X/bootmgr
+find --set-root /ntldr /ntldr
+
+title 7. Grub4dos menu.lst
+find --set-root /grldr
+
+title 8. EZBOOT
+find --set-root /EZBOOT/LOADER.BIN
+
+title 9. Go menu.lst
+configfile /W81X/menu.lst
+
+# th77
+
+---- هذه اذا لم يعمل بعض الامور فوق
+
+
+title 3. wee36.bin
+find --set-root /wee36.bin
+
+title 4. W81X\BCD
+find --set-root --active command +1
+find --set-root /W81X/bootmgr
+find --set-root /ntldr /ntldr
+
+title 5. EZBOOT
+find --set-root /EZBOOT/LOADER.BIN
+
+title 6. Mini XP AR ISO
+ls /W81X/Mini_xp.iso || find --set-root /W81X/Mini_xp.iso
+map --heads=0 --sectors-per-track=0 /W81X/Mini_xp.iso (0xff) || map --heads=0 --sectors-per-track=0 --mem /W81X/Mini_xp.iso (0xff)
+map --hook
+chainloader (0xff)
+
+title 7. ntboot.iso VHD
+map --mem /ntboot.iso (0xff)
+map --hook
+(0xff)/NTBOOT NT6=()/W81X/WIN7_1.vhd
+boot
+
+# th77
+
+
+=============================================
+
+
